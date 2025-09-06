@@ -1,0 +1,33 @@
+.card {
+    width: 200px;
+    height: 120px;
+    background: #e0e0e0;
+    margin: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+/* Change color when screen is less than 600px */
+@media (max-width: 600px) {
+    .card {
+        height: 500px;
+        background: green;
+    }
+}
+
+/* Medium screens: 600px to 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+    .card {
+        background: gray; 
+    }
+}
+
+/* Change color when screen is more than 900px */
+@media (min-width: 900px) {
+    .card {
+        background:lightblue;
+    }
+}

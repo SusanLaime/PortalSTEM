@@ -1,0 +1,87 @@
+/* Graph styles for algorithm cards */
+.card-graph {
+    margin-top: 10px;
+    text-align: center;
+    min-height: 60px;
+}
+/* Base styles for desktop */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f5f5f5;
+    }
+    header {
+        background: #222;
+        color: #fff;
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        width: 300px;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .card-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #2a4d69;
+    }
+    .card-desc {
+        color: #555;
+    }
+    .card-example {
+        background: #f0f4f8;
+        border-radius: 4px;
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Media query for tablets (portrait and landscape) */
+    /* Use this when the screen width is between 600px and 900px, e.g., tablets */
+    @media (max-width: 900px) and (min-width: 600px) {
+        .container {
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .card {
+            width: 45%;
+        }
+    }
+
+    /* Media query for mobile devices */
+    /* Use this when the screen width is 599px or less, e.g., smartphones */
+    @media (max-width: 599px) {
+        .container {
+            flex-direction: column;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
+        .card {
+            width: 100%;
+            padding: 1rem;
+        }
+        header {
+            padding: 1rem 0;
+        }
+    }
+
+    /* Media query for large screens */
+    /* Use this when the screen width is 1200px or more, e.g., large desktops */
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }

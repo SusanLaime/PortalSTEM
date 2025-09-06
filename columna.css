@@ -1,0 +1,75 @@
+html, body { overflow-x: hidden; } /* or hidden */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.25rem;
+  margin: 0 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  min-height: 120px;               /* tamaño básico */
+  border: 2px solid #333;          /* borde */
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background: lightblue;   
+  /*width: 50vw;             /* size of the boxes */
+  width: 100px;
+  height: 200px;*/
+  min-width: 0;
+  /*flex: 1 1 0;*/
+  /*flex: 0 0 calc((100% - 2 * 16px) / 3);*/
+  
+}
+
+.boxes { 
+    display: flex;
+    /*flex-direction: column; */
+    gap: 16px;
+    align-items: center;
+    justify-content: center;*/
+    height: 80%;               
+    width: 80%; 
+    max-width: 100%;
+    /*flex-wrap: wrap; */
+}
+
+/* ---------- Media queries ---------- */
+
+/* Mobile: 576px and below */
+@media (max-width: 576px) {
+    .boxes { 
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .box { 
+        background: #ffebee;
+    }
+  
+}
+
+/* Tablet: 577px to 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+    .boxes { flex-direction: row; 
+            overflow-x: hidden;
+            }
+    .box { background: #ffebee; 
+           min-width: 0;
+    }
+}
