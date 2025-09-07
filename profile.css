@@ -1,0 +1,15 @@
+.photo{
+    border-radius: 50%;
+}
+
+@media (max-width: 245px){
+    .photo{
+        height: 200px;
+    }
+}
+
+@media(max-width: 200px){
+    .photo{
+        height: 100px;
+    }
+}
